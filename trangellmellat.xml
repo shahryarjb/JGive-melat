@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="payment" method="upgrade">
+	<name>Trangell Mellat Payment Plugin for JGive</name>
+	<creationDate>Feb 2017</creationDate>
+	<version>0.0.1</version>
+	<author>Trangell</author>
+	<authorEmail>info@trangell.com</authorEmail>
+	<authorUrl>https://www.trangell.com</authorUrl>
+	<copyright>Copyright 2017 Trangell Team.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>پلاگین پرداخت ملت برای جی گیو</description>
+	<files>
+		<filename plugin="trangellmellat">trangellmellat.php</filename>
+		<folder>trangellmellat</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="melatuser" type="text" label="نام کاربری درگاه" default="" required="" />
+				<field name="melatpass" type="text" label="پسورد درگاه" default="" required="" />
+				<field name="melatterminalId" type="text" label="شناسه ترمینال" default="" required=""/>
+				<field name="plugin_name" type="text" default="درگاه ملت" label="نام درگاه" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
